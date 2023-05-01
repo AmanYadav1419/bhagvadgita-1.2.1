@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bhagavad Gita Sloka</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Bhagavad Gita Sloka</h1>
+	<form>
+		<label for="chapterNumber">Chapter Number:</label>
+		<input type="number" id="chapterNumber" required>
+		<label for="slokaNumber">Sloka Number:</label>
+		<input type="number" id="slokaNumber" required>
+		<label for="language">Language:</label>
+		<select id="language">
+			<option value="en">English</option>
+			<option value="hi">Hindi</option>
+			<option value="gu">Gujarati</option>
+			<option value="mr">Marathi</option>
+		</select>
+		<button type="button" id="getSlokaBtn">Get Sloka</button>
+		<button type="button" id="getMeaningBtn">Get Meaning</button>
+		<button type="button" id="getTranslationBtn">Get Translation</button>
+	</form>
+	<div id="slokaContainer"></div>
+	<div id="meaningContainer"></div>
+	<div id="translationContainer"></div>
+	<script src="script.js"></script>
+</body>
+</html>
